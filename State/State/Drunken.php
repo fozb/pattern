@@ -8,6 +8,22 @@
 
 namespace Pattern\State\Context;
 
-class Drunken
+use Pattern\State\StudentStateInterface;
+
+class Drunken implements StudentStateInterface
 {
+    public function spendBeer()
+    {
+        // TODO: Implement spendBeer() method.
+    }
+
+    public function spendCannabis()
+    {
+        // TODO: Implement spendCannabis() method.
+    }
+
+    public function spendWater()
+    {
+        // TODO: Implement spendWater() method.
+    }
 }
