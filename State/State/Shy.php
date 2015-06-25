@@ -8,6 +8,7 @@
 
 namespace Pattern\State\State;
 
+use Pattern\State\Context\Student;
 use Pattern\State\StudentStateInterface;
 
 class Shy implements StudentStateInterface
@@ -24,19 +25,19 @@ class Shy implements StudentStateInterface
 
     public function spendBeer()
     {
-        echo 'Yes, give me more!';
+        echo 'Yes, give me more beer!' . "\n";
         $this->student->setCurrentState(new Drunken($this->student));
     }
 
     public function spendCannabis()
     {
-        echo 'Year, Peace my friend';
+        echo 'Year, Peace my friend' . "\n";
         $this->student->setCurrentState(new Stoned($this->student));
     }
 
     public function spendWater()
     {
-        echo 'Pfff, give me a beer!';
+        echo 'Pfff, give me a beer not water!' . "\n";
         $this->student->setCurrentState($this);
     }
 }

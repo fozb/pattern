@@ -8,6 +8,7 @@
 
 namespace Pattern\State\Context;
 
+use Pattern\State\State\Shy;
 use Pattern\State\StudentStateInterface;
 
 class Student
@@ -19,7 +20,7 @@ class Student
 
     public function __construct()
     {
-        $this->state = new Shy();
+        $this->state = new Shy($this);
     }
 
     public function spendBeer()
