@@ -2,7 +2,7 @@
 /**
  * @category    Pattern
  * @package     State
- * @subpackage  Person
+ * @subpackage  State
  * @author      Stefan Schwager
  */
 
