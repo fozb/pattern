@@ -1,0 +1,10 @@
+{
+    "name": "Patterns",
+    "description": "Pattern examples",
+    "keywords": [
+        "Pattern"
+    ],
+    "autoload": {
+      "psr-4": { "Pattern\\Strategy\\": "./Strategy/" }
+    }
+}
