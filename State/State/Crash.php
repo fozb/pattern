@@ -24,13 +24,19 @@ class Crash implements StudentStateInterface
 
     public function spendBeer()
     {
+        echo 'Beer?? Go Away!';
+        $this->student->setCurrentState($this);
     }
 
     public function spendCannabis()
     {
+        echo 'Cannabis?? Go Away!';
+        $this->student->setCurrentState($this);
     }
 
     public function spendWater()
     {
+        echo 'Thanks!';
+        $this->student->setCurrentState($this);
     }
 }
