@@ -12,18 +12,31 @@ use Pattern\State\StudentStateInterface;
 
 class Drunken implements StudentStateInterface
 {
+    /**
+     * @var Student
+     */
+    private $student;
+
+    public function __construct(Student $student)
+    {
+        $this->student = $student;
+    }
+
     public function spendBeer()
     {
-        // TODO: Implement spendBeer() method.
+        echo 'Ok, but that\'s the last one ;D';
+        $this->student->setCurrentState($this);
     }
 
     public function spendCannabis()
     {
-        // TODO: Implement spendCannabis() method.
+        echo 'Giveeee mmme that shit';
+        $this->student->setCurrentState(new Crash($this->student));
     }
 
     public function spendWater()
     {
-        // TODO: Implement spendWater() method.
+        echo 'Yes vodka! WTF that is water';
+        $this->student->setCurrentState($this);
     }
 }
