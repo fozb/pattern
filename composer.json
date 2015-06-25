@@ -5,6 +5,8 @@
         "Pattern"
     ],
     "autoload": {
-      "psr-4": { "Pattern\\Strategy\\": "./Strategy/" }
+      "psr-4": {
+          "Pattern\\": "./"
+      }
     }
 }

@@ -7,23 +7,29 @@
 
 namespace Pattern\Strategy;
 
-abstract class Man extends Human
+abstract class Man extends Human implements ApproachStrategyInterface
 {
     /**
      * @var ApproachStrategyInterface
      */
     protected $approachStrategy;
 
-    public function __constructor()
+    public function __construct()
     {
         $this->setDefaultApproachStrategy();
     }
 
+    /**
+     * @return mixed
+     */
     public function approachABeautifulWoman()
     {
         return $this->approachStrategy->approachABeautifulWoman();
     }
 
+    /**
+     * @param ApproachStrategyInterface $approachStrategy
+     */
     public function setApproachStrategy(ApproachStrategyInterface $approachStrategy)
     {
         $this->approachStrategy = $approachStrategy;
