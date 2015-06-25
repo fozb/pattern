@@ -7,7 +7,7 @@
 
 namespace Pattern\Strategy;
 
-abstract class Man extends Human
+abstract class Man extends Human implements ApproachStrategyInterface
 {
     /**
      * @var ApproachStrategyInterface
