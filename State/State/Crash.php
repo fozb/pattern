@@ -6,7 +6,7 @@
  * @author      Stefan Schwager
  */
 
-namespace Pattern\State\Context;
+namespace Pattern\State\State;
 
 use Pattern\State\StudentStateInterface;
 
