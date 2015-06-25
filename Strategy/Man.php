@@ -19,11 +19,17 @@ abstract class Man extends Human
         $this->setDefaultApproachStrategy();
     }
 
+    /**
+     * @return mixed
+     */
     public function approachABeautifulWoman()
     {
         return $this->approachStrategy->approachABeautifulWoman();
     }
 
+    /**
+     * @param ApproachStrategyInterface $approachStrategy
+     */
     public function setApproachStrategy(ApproachStrategyInterface $approachStrategy)
     {
         $this->approachStrategy = $approachStrategy;
