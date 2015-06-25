@@ -14,7 +14,7 @@ abstract class Man extends Human
      */
     protected $approachStrategy;
 
-    public function __constructor()
+    public function __construct()
     {
         $this->setDefaultApproachStrategy();
     }

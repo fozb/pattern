@@ -42,5 +42,3 @@ class Client
         echo $janTryToFlirt->approachABeautifulWoman() . "\n";
     }
 }
-
-
