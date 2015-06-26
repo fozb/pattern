@@ -8,8 +8,8 @@
 
 namespace Pattern\Composite\Composite;
 
-use Pattern\Composite\Component\UserComponent;
+use Pattern\Composite\Component\FileComponent;
 
-class Directory extends UserComponent
+class Directory extends FileComponent
 {
 }

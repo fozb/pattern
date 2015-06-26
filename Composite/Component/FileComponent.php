@@ -8,6 +8,7 @@
 
 namespace Pattern\Composite\Component;
 
-abstract class UserComponent
+abstract class FileComponent
 {
+
 }

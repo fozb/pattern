@@ -8,8 +8,8 @@
 
 namespace Pattern\Composite\Leaf;
 
-use Pattern\Composite\Component\UserComponent;
+use Pattern\Composite\Component\FileComponent;
 
-class File extends UserComponent
+class File extends FileComponent
 {
 }
