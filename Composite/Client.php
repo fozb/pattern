@@ -1,9 +1,5 @@
 <?php
-/**
- * @category    Pattern
- * @package     Composite
- * @author      Stefan Schwager
- */
+
 namespace Pattern\Composite;
 
 use Pattern\Composite\Composite\Directory;
@@ -16,10 +12,23 @@ $client->{$function}();
 
 class Client
 {
-    public function directoryWithOneFile()
+    public function testGetCount()
     {
-        $directory = new Directory();
-        $file = new File();
+        $directory = new Directory('my-directory');
+        $file = new File('my-file.pdf');
         $directory->add($file);
+        $file = new File('my-file2.pdf');
+        $directory->add($file);
+
+
+        $subDirectory = new Directory('my-directory');
+        $file = new File('my-file.pdf');
+        $directory->add($file);
+        $file = new File('my-file2.pdf');
+        $directory->add($file);
+
+        $directory->add($subDirectory);
+
+        echo $directory->getCount();
     }
 }
