@@ -2,14 +2,14 @@
 /**
  * @category    Pattern
  * @package     Composite
- * @subpackage  Leaf
+ * @subpackage  Composite
  * @author      Stefan Schwager
  */
 
-namespace Pattern\Composite\Leaf;
+namespace Pattern\Composite\Composite;
 
 use Pattern\Composite\Component\UserComponent;
 
-class File extends UserComponent
+class Directory extends UserComponent
 {
 }
